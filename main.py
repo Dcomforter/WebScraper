@@ -23,6 +23,7 @@ class WebScraper:
         else:
             return "Data not available"
 
+    # Gets all the phone numbers on the webpage
     def get_phone_number(self):
         if self.response:
             soup = BeautifulSoup(self.response.text, 'html.parser')
